@@ -5,6 +5,7 @@ html
     title jQuery Plugin
     link(rel='stylesheet', href='js/vendor/bootstrap/css/bootstrap.css')
     link(rel='stylesheet', href='js/vendor/font-awesome/css/font-awesome.css')
+    link(rel='stylesheet', href='css/main.css')
     link(rel='stylesheet', href='css/jquery.plugin.css')
   block nav
     ul
@@ -23,5 +24,12 @@ html
   block body
 
   block footer
+    script(src='js/vendor/jquery-1.10.2.js')
+    script(src='js/vendor/zepto.js')
     script(src='js/vendor/bootstrap/js/bootstrap.js')
     script(src='js/jquery.plugin.js')
+
+script
+  (function(){
+    $('.nav').plugin();
+  })(jQuery);
