@@ -2,7 +2,13 @@
 (function() {
 
   (function($) {
-    return 'use strict';
+    'use strict';    $.plugin = function(options) {};
+    $.plugin["default"] = $.plugin.prototype = {
+      _init: function(options) {}
+    };
+    return $.fn.plugin = function(options) {
+      return this.each(function() {});
+    };
   })(jQuery);
 
 }).call(this);
